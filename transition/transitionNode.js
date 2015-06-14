@@ -1,5 +1,5 @@
-import { DataMap } from '../core/DataMap';
-import { activeTimer, createTimer } from '../core/Timer';
+import { DataMap } from '../DataMap';
+import { activeTimer, createTimer } from '../Timer';
 
 export function transitionNode(node, i, ns, id, inherit) {
   var lock = node[ns] || (node[ns] = {active: 0, count: 0});
