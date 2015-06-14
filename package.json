@@ -1,6 +1,6 @@
 {
   "name": "antigen",
-  "version": "v0.0.1",
+  "version": "v0.0.2",
   "description": "Abstract Selection",
   "main": "index.js",
   "scripts": {
