@@ -7,13 +7,13 @@ import { delay } from './transition/delay';
 import { ease } from './transition/ease';
 import { each } from './transition/each';
 
-export class Transition extends BaseArray {
+export class BaseTransition extends BaseArray {
   constructor(input) {
     super(input);
   }
 
   static factory(groups, ns, id) {
-    var trans = Transition.from(groups);
+    var trans = BaseTransition.from(groups);
     trans.namespace = ns;
     trans.id = id;
 
@@ -21,9 +21,9 @@ export class Transition extends BaseArray {
   }
 }
 
-Transition.prototype.duration = duration;
-Transition.prototype.tagged = tagged;
-Transition.prototype.remove = remove;
-Transition.prototype.delay = delay;
-Transition.prototype.ease = ease;
-Transition.prototype.each = each;
+BaseTransition.prototype.duration = duration;
+BaseTransition.prototype.tagged = tagged;
+BaseTransition.prototype.remove = remove;
+BaseTransition.prototype.delay = delay;
+BaseTransition.prototype.ease = ease;
+BaseTransition.prototype.each = each;
